@@ -106,15 +106,20 @@ button {
 
 #title {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 16px;
-    height: 60px;
-}
+    flex-wrap: wrap;
 
-#title img {
-    height: 50px;
-    width: 50px;
-    border-radius: 16px;
+    h1 {
+        margin: 0;
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+        border-radius: 16px;
+    }
 }
 
 #availableOnContainer {
