@@ -1,47 +1,65 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faDownload, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
+import logo from "./assets/logo512.webp";
+import Icon from "./components/Icon";
 
 function App() {
     return (
         <div id="app" className="panel">
-            <h1 className="entering">Min</h1>
-            <h2 className="entering">Available on</h2>
-            <h3 className="entering">Android</h3>
-            <div style={{ gap: 10, display: "flex", justifyContent: "center" }}>
-                <button
-                    className="entering"
-                    onClick={() => {
-                        location.href = "https://github.com/gooseDes/min-mobile/";
-                    }}
-                >
-                    Github
-                </button>
-                <button
-                    className="entering"
-                    onClick={() => {
-                        location.href = "https://github.com/gooseDes/min-mobile/releases/latest";
-                    }}
-                >
-                    Download
-                </button>
+            <div id="title" className="entering">
+                <img src={logo} alt="logo" />
+                <h1>Min the Messenger</h1>
             </div>
-            <h3 className="entering">Web</h3>
-            <div style={{ gap: 10, display: "flex", justifyContent: "center" }}>
-                <button
-                    className="entering"
-                    onClick={() => {
-                        location.href = "https://github.com/gooseDes/min-frontend/";
-                    }}
-                >
-                    Github
-                </button>
-                <button
-                    className="entering"
-                    onClick={() => {
-                        location.href = "https://web.msg-min.xyz/";
-                    }}
-                >
-                    Open
-                </button>
+            <div className="entering">
+                <p>
+                    It has no crazy features, it's just open source and not vibecoded. I made it because I was bored. You can
+                    build or host it yourself. That's it.
+                </p>
+                <p className="secondary">Yes, this logo was made in MS Paint</p>
+            </div>
+            <hr className="entering" />
+            <h2 className="entering">Available on</h2>
+            <div id="availableOnContainer">
+                <h3 className="entering">Android</h3>
+                <div className="entering" style={{ gap: 10, display: "flex", justifyContent: "center" }}>
+                    <button
+                        onClick={() => {
+                            location.href = "https://github.com/gooseDes/min-mobile/";
+                        }}
+                    >
+                        <Icon icon={faGithub} />
+                        <p>Source Code</p>
+                    </button>
+                    <button
+                        onClick={() => {
+                            location.href = "https://github.com/gooseDes/min-mobile/releases/latest";
+                        }}
+                    >
+                        <Icon icon={faDownload} />
+                        <p>Download</p>
+                    </button>
+                </div>
+                <hr className="entering" />
+                <h3 className="entering">Web</h3>
+                <div className="entering" style={{ gap: 10, display: "flex", justifyContent: "center" }}>
+                    <button
+                        onClick={() => {
+                            location.href = "https://github.com/gooseDes/min-frontend/";
+                        }}
+                    >
+                        <Icon icon={faGithub} />
+                        <p>Source Code</p>
+                    </button>
+                    <button
+                        onClick={() => {
+                            location.href = "https://web.msg-min.xyz/";
+                        }}
+                    >
+                        <Icon icon={faGlobe} />
+                        <p>Open</p>
+                    </button>
+                </div>
             </div>
         </div>
     );

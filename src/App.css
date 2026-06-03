@@ -19,6 +19,17 @@ h3 {
     text-align: center;
 }
 
+p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #2d2d32dd;
+    border-radius: 1;
+    width: 80%;
+}
+
 button {
     background-color: #1f1f23dd;
     border: 2px solid #2d2d32dd;
@@ -28,6 +39,9 @@ button {
     padding: 8px 16px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     font-family: "Rubik";
+    display: flex;
+    align-items: center;
+    gap: 8px;
     transition:
         filter 0.2s ease-in-out,
         scale 0.2s ease-in-out;
@@ -39,6 +53,10 @@ button {
 
     &:hover {
         filter: brightness(1.2);
+    }
+
+    p {
+        margin: 0;
     }
 }
 
@@ -67,6 +85,10 @@ button {
     animation: entering 0.75s ease;
 }
 
+.secondary {
+    color: #aaaaaa;
+}
+
 #app {
     position: fixed;
     top: 10px;
@@ -77,4 +99,27 @@ button {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aaaaaa transparent;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 60px;
+}
+
+#title img {
+    height: 50px;
+    width: 50px;
+    border-radius: 16px;
+}
+
+#availableOnContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
