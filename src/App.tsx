@@ -22,7 +22,7 @@ function App() {
             <h2 className="entering">Available on</h2>
             <div id="availableOnContainer">
                 <h3 className="entering">Android</h3>
-                <div className="entering" style={{ gap: 10, display: "flex", justifyContent: "center" }}>
+                <div className="availableOn entering">
                     <button
                         onClick={() => {
                             location.href = "https://github.com/gooseDes/min-mobile/";
@@ -41,8 +41,8 @@ function App() {
                     </button>
                 </div>
                 <hr className="entering" />
-                <h3 className="entering">Web</h3>
-                <div className="entering" style={{ gap: 10, display: "flex", justifyContent: "center" }}>
+                <h3 className="entering">Web (deprecated)</h3>
+                <div className="availableOn entering">
                     <button
                         onClick={() => {
                             location.href = "https://github.com/gooseDes/min-frontend/";
@@ -54,6 +54,26 @@ function App() {
                     <button
                         onClick={() => {
                             location.href = "https://web.msg-min.xyz/";
+                        }}
+                    >
+                        <Icon icon={faGlobe} />
+                        <p>Open</p>
+                    </button>
+                </div>
+                <hr className="entering" />
+                <h3 className="entering">Web (WIP)</h3>
+                <div className="availableOn entering">
+                    <button
+                        onClick={() => {
+                            location.href = "https://github.com/gooseDes/min-web/";
+                        }}
+                    >
+                        <Icon icon={faGithub} />
+                        <p>Source Code</p>
+                    </button>
+                    <button
+                        onClick={() => {
+                            location.href = "https://dev.msg-min.xyz/";
                         }}
                     >
                         <Icon icon={faGlobe} />
