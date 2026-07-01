@@ -53,7 +53,7 @@ function App() {
                     </button>
                     <button
                         onClick={() => {
-                            location.href = "https://web.msg-min.xyz/";
+                            location.href = "https://web.msgmin.com/";
                         }}
                     >
                         <Icon icon={faGlobe} />
@@ -73,7 +73,7 @@ function App() {
                     </button>
                     <button
                         onClick={() => {
-                            location.href = "https://dev.msg-min.xyz/";
+                            location.href = "https://dev.msgmin.com/";
                         }}
                     >
                         <Icon icon={faGlobe} />
