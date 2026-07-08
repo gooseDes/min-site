@@ -41,6 +41,34 @@ function App() {
                     </button>
                 </div>
                 <hr className="entering" />
+                <h3 className="entering">Web and Desktop (WIP)</h3>
+                <div className="availableOn entering">
+                    <button
+                        onClick={() => {
+                            location.href = "https://github.com/gooseDes/min-web/";
+                        }}
+                    >
+                        <Icon icon={faGithub} />
+                        <p>Source Code</p>
+                    </button>
+                    <button
+                        onClick={() => {
+                            location.href = "https://dev.msgmin.com/";
+                        }}
+                    >
+                        <Icon icon={faGlobe} />
+                        <p>Open Web</p>
+                    </button>
+                    <button
+                        onClick={() => {
+                            location.href = "https://github.com/gooseDes/min-web/releases/latest";
+                        }}
+                    >
+                        <Icon icon={faGlobe} />
+                        <p>Download Desktop App</p>
+                    </button>
+                </div>
+                <hr className="entering" />
                 <h3 className="entering">Web (deprecated)</h3>
                 <div className="availableOn entering">
                     <button
@@ -54,26 +82,6 @@ function App() {
                     <button
                         onClick={() => {
                             location.href = "https://web.msgmin.com/";
-                        }}
-                    >
-                        <Icon icon={faGlobe} />
-                        <p>Open</p>
-                    </button>
-                </div>
-                <hr className="entering" />
-                <h3 className="entering">Web (WIP)</h3>
-                <div className="availableOn entering">
-                    <button
-                        onClick={() => {
-                            location.href = "https://github.com/gooseDes/min-web/";
-                        }}
-                    >
-                        <Icon icon={faGithub} />
-                        <p>Source Code</p>
-                    </button>
-                    <button
-                        onClick={() => {
-                            location.href = "https://dev.msgmin.com/";
                         }}
                     >
                         <Icon icon={faGlobe} />

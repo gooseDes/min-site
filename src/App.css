@@ -31,6 +31,8 @@ hr {
 }
 
 button {
+    width: fit-content;
+    min-width: 250px;
     background-color: #1f1f23dd;
     border: 2px solid #2d2d32dd;
     border-radius: 16px;
@@ -127,10 +129,16 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    width: calc(100% - 100px);
+    max-width: 800px;
 }
 
 .availableOn {
+    width: 100%;
     gap: 8px;
-    display: flex;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
     justify-content: center;
 }
