@@ -53,7 +53,7 @@ function App() {
                     </button>
                     <button
                         onClick={() => {
-                            location.href = "https://dev.msgmin.com/";
+                            location.href = "https://web.msgmin.com/";
                         }}
                     >
                         <Icon icon={faGlobe} />
