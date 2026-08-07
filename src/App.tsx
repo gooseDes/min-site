@@ -41,7 +41,7 @@ function App() {
                     </button>
                 </div>
                 <hr className="entering" />
-                <h3 className="entering">Web and Desktop (WIP)</h3>
+                <h3 className="entering">Web and Desktop</h3>
                 <div className="availableOn entering">
                     <button
                         onClick={() => {
@@ -65,27 +65,7 @@ function App() {
                         }}
                     >
                         <Icon icon={faGlobe} />
-                        <p>Download Desktop App</p>
-                    </button>
-                </div>
-                <hr className="entering" />
-                <h3 className="entering">Web (deprecated)</h3>
-                <div className="availableOn entering">
-                    <button
-                        onClick={() => {
-                            location.href = "https://github.com/gooseDes/min-frontend/";
-                        }}
-                    >
-                        <Icon icon={faGithub} />
-                        <p>Source Code</p>
-                    </button>
-                    <button
-                        onClick={() => {
-                            location.href = "https://web.msgmin.com/";
-                        }}
-                    >
-                        <Icon icon={faGlobe} />
-                        <p>Open</p>
+                        <p>Download Desktop</p>
                     </button>
                 </div>
             </div>
