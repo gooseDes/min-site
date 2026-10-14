@@ -56,6 +56,14 @@ function App() {
             <Icon icon={faDownload} />
             <p>Download</p>
           </button>
+          <button
+            onClick={() => {
+              window.location.href = "https://github.com/gooseDes/min-mobile/releases/latest";
+            }}
+          >
+            <Icon icon={faDownload} />
+            <p>Download Legacy Version</p>
+          </button>
         </div>
         <hr className="entering" />
         <h3 className="entering">Web and Desktop</h3>
